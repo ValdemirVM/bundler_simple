@@ -1,6 +1,8 @@
 # Bundler Simple  - by Valdemir VM
 ## Um Bundler Simples para não usar webpack
 
+OBS: Este sitema ainda não foi testado suficientemente. Para usufruir do Bundler, para ambiente windows, testado e aprovado, use a pasta BUNDLER_SIMPLE_ROOT. 
+
 Este projeto organiza várias páginas HTML, cada uma com seu próprio arquivo JS, e permite a importação de módulos necessários. A estrutura do projeto inclui uma pasta para componentes com snippets HTML reutilizáveis que são carregados dinamicamente usando JavaScript, além de utilizar SCSS para estilização.
 
 ## Licença
