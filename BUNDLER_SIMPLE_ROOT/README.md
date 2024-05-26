@@ -1,5 +1,5 @@
 
-## Instalação
+## Instalação sem o diretório "SRC"
 ### Esse código vai criar a estrutura do projeto diretamente na mesma pasta onde o setup.js está localizado. 
 ### Não terá a presença da pasta src. 
 ### Este projeto é para ser instalado na pasta raiz do servidor de teste. 
