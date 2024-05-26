@@ -98,6 +98,9 @@ minify: Minifica os arquivos JS e CSS.
 minify-js: Minifica os arquivos JS.
 minify-css: Minifica os arquivos CSS.
 
+# BUNDLER_SIMPLE_ROOT
+Os arquivos desta pasta instalam e trabalham diretamente com o servidor de teste. O setup.js instala o projeto em sua mesma pasta, e o package.js envia os arquivos de produção paara a pasta "dist".
+
 # Considerações Finais
 Este projeto foi criado para fornecer uma estrutura básica e simples para o desenvolvimento web sem a necessidade de utilizar ferramentas complexas como o Webpack. Sinta-se à vontade para modificar e expandir conforme suas necessidades.
 
