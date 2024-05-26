@@ -3,22 +3,25 @@
   "version": "1.0.0",
   "description": "Um Bundler Simples para não usar webpack",
   "author": "Valdemir Vinagre Mendes",
-  "license": "",
+  "license": "CC-BY-4.0",
+  "licenseText": "This work is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/",
+  "main": "index.js",
   "scripts": {
-    "setup": "node setup.js",
-    "build": "npm run clean && npm run copy && npm run compile-scss && npm run minify",
     "clean": "rimraf dist",
-    "copy": "copyfiles -u 1 **/* dist",
+    "copy": "node copyFiles.js",
     "compile-scss": "sass scss/style.scss dist/css/style.css",
-    "minify": "npm run minify-js && npm run minify-css",
-    "minify-js": "terser dist/js/*.js -o dist/js",
-    "minify-css": "cssnano dist/css/*.css -o dist/css"
+    "minify-js": "node minify-js.js",
+    "minify-css": "node minify-css.js",
+    "setup": "node setup.js",
+    "build": "node build.js"
   },
   "devDependencies": {
     "copyfiles": "^2.4.1",
     "terser": "^5.9.0",
     "cssnano": "^5.0.15",
     "rimraf": "^3.0.2",
-    "sass": "^1.32.8"
+    "sass": "^1.32.8",
+    "ncp": "^2.0.0",
+    "postcss": "^8.3.6"
   }
 }
